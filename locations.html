@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<html lang = 'en'>
+
+<head>
+  <meta charset='utf-8'/>
+  <meta name= 'viewport' content='width=device-width, initial-scale=1, maximum-scale = 1.0'>
+  <meta >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire">
+  <script src = 'plugins\jquery-3.4.1.js'> </script>
+  <script src = 'website.js'> </script>
+  <script src = 'base.js'> </script>
+  <script src = 'locations.js'> </script>
+  <link rel = 'stylesheet' href = 'index.css'/>
+  <link rel = 'stylesheet' href = 'locations.css'/>
+
+
+  <title>West-Side RPG v4</title>
+</head>
+
+<body>
+    <div id = 'box' >
+      <div class = 'ribbon'>
+       <img src = 'res/img/WSLogo.png' id = 'wslogo' />
+        <span> SERVER ADDRESS: <a style = "color: green" href= > 127.0.0.1 </a> </span>
+      </div>
+      <div onclick = 'goBack();' id = 'previousbuttn'> < <div id = 'infobar'> </div> </div>
+      <script> infoBox(); </script>
+      <div id = 'introdisp'> Welcome to West side RPG </div>
+      <div id = "cityhallpop" class = "popupComp" style = "visibility: hidden"> <button id = "cityhallpopclose" onclick = "cityhallx();" > x </button> <p> <h4>
+      </br>
+      Interested in joining our community and becoming a WS citizen?
+      You can, by visiting our city’s heart, where you will able to register your character and acquire your own personal identification card at the reception desk.
+      In addition, you will be able to collect your ecard here. This is a precious item, which grants you the possibility to earn better rewards and special items. </br>
+    </br>
+    <img style = "width: 100%;" src = 'res/img/cityhall2.png'/>
+  </br>
+</br>
+      Inside the same building you will be also able to find an office of our past governor. </br>
+    </br>
+    <img style = "width: 100%;" src = 'res/img/cityhall3.png'/>
+  </br>
+         </br>
+          Here you will be able to receive very special items, by bringing other items. </br>
+        <div class = "spacer"> </div> </h4> </p></div>
+      <div id = "housingpop" class = "popup" style = "visibility: hidden"> <button id = "housingpopclose" onclick = "housingx();" > x </button> <p> <h4> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h4> </p></div>
+      <div id = "dealershippop" class = "popup" style = "visibility: hidden"> <button id = "dealershippopclose" onclick = "dealershipx();" > x </button> <p> <h4> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h4> </p></div>
+      <div id = "jobcenterpop" class = "popupComp" style = "visibility: hidden"> <button id = "jobcenterpopclose" onclick = "jobcenterx();" > x </button> <p> <h4>
+
+      </br> Looking to make more money in a fun and legit way?
+        Just visit our job center, located at the reception desk of the Life Invader building and apply to one of the many jobs we offer. </br>
+      </br>
+        <img src = 'res/img/jobcenterpopimage.png'/>
+         <div class = "spacer"> </div> </h4> </p></div>
+
+      <div id = "fibdepartmentpop" class = "popupComp" style = "visibility: hidden"> <button id = "fibdepartmentpopclose" onclick = "fibdepartmentx();" > x </button> <p> <h4>
+      </br>
+        Now this place is supposed to be top secret, so please as soon you read this avoid sharing to anyone.
+        Inside it, you might find many things you are not ready to see or you have never imagined, so only special high-level people can have access to the higher floors.
+        In case you have any question you can also just ask the reception. </br>
+      </br>
+      <img style = 'width: 100%' src = 'res/img/fib.png'/>
+
+        <div class = "spacer"> </div> </h4> </p></div>
+      <div id = "officespop" class = "popupComp" style = "visibility: hidden"> <button id = "officespopclose" onclick = "officesx();" > x </button> <p> <h4>
+      </br>
+      Have you ever spent hours in line waiting for those lazy office workers to come back from their breaks, so they could just make some boring form for you?
+      AH, now you no longer have to wait. At the offices located above the job center you will able to make your own files, folders and many other paperwork necessary for your job.</br>
+    </br>
+    <img style = 'width: 49.5%' src = 'res/img/office1.png'/> <img style = 'width: 49.5%' src = 'res/img/office2.png'/>
+    </br>
+        <!-- <div class = "spacer"> </br> -->
+        </br>
+          Just don’t forget to bring paper.</br>
+        <div class = "spacer"> </div> </h4> </p></div>
+      <div id = "247pop" class = "popup" style = "visibility: hidden"> <button id = "247popclose" onclick = "tfsshopx();" > x </button> <p> <h4> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h4> </p></div>
+      <div id = "bankpop" class = "popupComp" style = "visibility: hidden"> <button id = "bankpopclose" onclick = "bankx();" > x </button> <p> <h4>
+
+      </br> Banks are here to help you manage your money.
+            At the main bank, called West-Side Bank, you will have the chance every ingame day at 6 a.m(bank-time) to collect your salary. To do so, when it reaches the bank-time(BT) get in line and interact with the bank balconies.
+            In addition, you will have the chance to create your own bank account. With it, you will have the ability to deposit or withdraw at any time and at any bank of your choosing. </br>
+      </br>
+          <img style = 'width: 100%;' src = 'res/img/bank1.png'/>
+        </br>
+      </br>
+        If you are unable to reach the WS bank in time for bank-time, but have an open bank account,
+        FEAR NOT… </br>
+      </br>
+        <img style = 'width: 100%;' src = 'res/img/bank2.png'/>
+      </br>
+    </br>
+      You will still be able to receive some part of your salary.
+
+
+          <div class = "spacer"> </div> </h4> </p></div>
+
+      <div id = "cspop" class = "popupComp" style = "visibility: hidden"> <button id = "cspopclose" onclick = "csx();" > x </button> <p> <h4>
+      </br>
+      Located next to the LSPD you can visit any time, if you ever feel stress from your work load or you need to release some pressure. </br>
+      Follow the <img src = 'res/img/csicon1.png'/>
+    </br>
+    <img style = 'width: 100%; ' src = 'res/img/cs1.png'/>
+  </br>
+      </br>
+      As soon you enter you will have this beautiful reception where you can check the tasks you can do, and by doing them earn special items, money and rank up your own character.
+      Also if you go upstairs you will find our Federal Agency</br>
+    </br>
+      <img style = 'width: 100%;' src = 'res/img/cs2.png'/>
+    </br>
+    </br>
+      Lastly, if you pass the reception on the right side you have an office. That special office belongs to our mayor, so please always try to not make any noise. </br>
+    </br>
+    <img style = 'width: 100%;' src = 'res/img/fibdepart.png'/>
+  </br>
+
+      <div class = "spacer"> </div> </h4> </p></div>
+      <div id = "hardwarestorepop" class = "popup" style = "visibility: hidden"> <button id = "hardwarestorepopclose" onclick = "hardwarestorex();" > x </button> <p> <h4> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h4> </p></div>
+      <div id = "ammunationpop" class = "popup" style = "visibility: hidden"> <button id = "ammunationpopclose" onclick = "ammunationx();" > x </button> <p> <h4> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h4> </p></div>
+       <div id = 'infobox-cont'>
+         <span id = 'pointer'> </span>
+         <div id = 'cityhall' onclick = 'cityhall();' class = 'infobox'> <img src = 'res/img/.png'/> <span> City Hall </span> </div>
+         <div id = 'dealership' onclick = 'dealership();' class = 'infobox'> <img src = "res/img/.png"/> <span> Dealership </span> </div>
+         <div id = 'jobcenter' onclick = 'jobcenter();' class = 'infobox'> <img src = "res/img/.png"/> <span> Job center </span> </div>
+         <div id = 'fibdepartment' onclick = 'fibdepartment();' class = 'infobox'> <img src = "res/img/.png"/> <span> FIB Department </span> </div>
+         <div id = 'offices' onclick = 'offices();' class = 'infobox'> <img src = "res/img/.png"/> <span> Offices </span> </div>
+         <div id = 'bank' onclick = 'bank();' class = 'infobox'> <img src = "res/img/.png"/> <span> Bank </span> </div>
+         <div id = 'cs' onclick = 'cs();' class = 'infobox'> <img src = "res/img/.png"/> <span> Community Center </span> </div>
+
+         <div id = 'stores' onclick = 'storespage();' class = 'infobox'> <img src = "res/img/.png"/> <span> Stores </span> </div>
+       </div>
+     </div>
+
+  </body>
+
+ </html>

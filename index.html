@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+
+<html lang = 'en'>
+
+<head>
+  <meta charset='utf-8'/>
+  <meta name= 'viewport' content='width=device-width, initial-scale=1, maximum-scale = 1.0'>
+  <meta >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire">
+  <script src = 'plugins\jquery-3.4.1.js'> </script>
+	<script src = 'launchtimestamp.js'> </script>
+  <script src = 'index.js'> </script>
+  <script src = 'base.js'> </script>
+	<link rel = 'stylesheet' href = 'index.css'/>
+	<title>West-Side RPG v4</title>
+</head>
+
+<body>
+    <div id = 'box' >
+      <div id = 'launcht' class="font-effect-outline">  </div>
+      <div class = 'ribbon'>
+        <button onclick = 'goBack();' id = 'previousbuttn'> < </button>
+        <img src = 'res/img/WSLogo.png' id = 'wslogo' />
+        <span> SERVER ADDRESS: <a style = "color: green" href= > 127.0.0.1 </a> </span>
+      </div>
+       <div id = 'infobar'> </div>
+       <script> infoBox(); </script>
+       <div id = 'introdisp' style = 'top: calc(4vh + 10px); width: 100%; padding-left: 0% !important;'> Welcome to West side RPG </div>
+      <script> startClock() </script>
+      <div id = 'btn-container'>
+        <button id = 'mainwebbtn' onclick = 'redirectweb();' class = 'btns'> <img src = 'res/img/gta5.png' /> <span> <b> WEBPAGE </b> <span> > </span> </span> </button>
+        <div id = 'mainwebintro' style = 'visibility: hidden' class = 'introbox'> <p> Click 'WEBSITE' button above to view information regarding server, vehicles, skins and alot more!' </p> </div>
+        <button id = 'discordbtn' onclick = 'redirectdisc();' class = 'btns'> <img src = 'res/img/discordicon.png'/> <span> <b> DISCORD </b> <span> > </span> </span></button>
+        <div id = 'discordintro' style = 'visibility: hidden' class = 'introbox'> <p> Click 'DISCORD' button above to join our community on Discord server channel' </p> </div>
+        </div>
+    </div>
+    <script>
+
+    $(document).ready(function() {
+
+      $('#mainwebbtn').hover(inHovW, outHovW)
+      $('#discordbtn').hover(inHovD, outHovD)
+
+    })
+     </script>
+
+</body>
+
+</html>

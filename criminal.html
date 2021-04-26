@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+
+<html lang = 'en'>
+
+<head>
+  <meta charset='utf-8'/>
+  <meta name= 'viewport' content='width=device-width, initial-scale=1, maximum-scale = 1.0'>
+  <meta >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire">
+  <script src = 'plugins\jquery-3.4.1.js'> </script>
+  <script src = 'criminal.js'> </script>
+  <script src = 'base.js'> </script>
+  <link rel = 'stylesheet' href = 'index.css'/>
+  <link rel = 'stylesheet' href = 'criminal.css'/>
+
+  <title>West-Side RPG v4</title>
+</head>
+
+
+<body>
+    <div id = 'box' >
+      <div class = 'ribbon'>
+        <img src = 'res/img/WSLogo.png' id = 'wslogo' />
+        <span> SERVER ADDRESS: <a style = "color: green" href= > 127.0.0.1 </a> </span>
+      </div>
+        <div onclick = 'goBack();' id = 'previousbuttn'> < <div id = 'infobar'> </div> </div>
+        <script> infoBox(); </script>
+        <div id = 'introdisp'> Welcome to West side RPG </div>
+        <div id = 'infobox-cont'>
+        <span id = 'pointer'> </span>
+        <div id = "gtapop" class = "popup" style = "visibility: hidden"> <button id = "gtapopclose" onclick = "gtapopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "shoprobberpop" class = "popup" style = "visibility: hidden"> <button id = "shoprobberpopclose" onclick = "shoprobberpopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "bankrobberpop" class = "popup" style = "visibility: hidden"> <button id = "bankrobberpopclose" onclick = "bankrobberpopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "opop" class = "popup" style = "visibility: hidden"> <button id = "opopclose" onclick = "opopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "tpop" class = "popup" style = "visibility: hidden"> <button id = "tpopclose" onclick = "tpopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "thpop" class = "popup" style = "visibility: hidden"> <button id = "trpopclose" onclick = "trpopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+
+        <div id = 'gtabox' onclick = 'gtapop();' class = 'infobox'> <img src = "res/img/criminalicon.png"/> <span> GTA </span> </div>
+        <div id = 'electricianbox' onclick = 'shoprobberpop();' class = 'infobox'> <img src = 'res/img/criminalicon.png'/> <span> Shop robberies  </span> </div>
+        <div id = 'engineerbox' onclick = 'bankrobberpop();' class = 'infobox'> <img src = 'res/img/criminalicon.png'/> <span> Bank robberies </span> </div>
+        <div id = 'obox' onclick = 'opop();' class = 'infobox'> <img src = 'res/img/criminalicon.png'/> <span> Coming soon </span> </div>
+        <div id = 'tbox' onclick = 'tpop();' class = 'infobox'> <img src = 'res/img/criminalicon.png'/> <span> Coming soon </span> </div>
+        <div id = 'thbox' onclick = 'trpop();' class = 'infobox'> <img src = 'res/img/criminalicon.png'/> <span> Coming soon </span> </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

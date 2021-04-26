@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html lang = 'en'>
+
+<head>
+  <meta charset='utf-8'/>
+  <meta name= 'viewport' content='width=device-width, initial-scale=1, maximum-scale = 1.0'>
+  <meta >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire">
+  <script src = 'plugins\jquery-3.4.1.js'> </script>
+  <script src = 'website.js'> </script>
+  <script src = 'base.js'> </script>
+  <link rel = 'stylesheet' href = 'index.css'/>
+  <link rel = 'stylesheet' href = 'webpage.css'/>
+
+  <title>West-Side RPG v4</title>
+</head>
+
+<body>
+    <div id = 'box' >
+      <div class = 'ribbon'>
+        <img src = 'res/img/WSLogo.png' id = 'wslogo' />
+        <span> SERVER ADDRESS: <a style = "color: green" href= > 127.0.0.1 </a> </span>
+      </div>
+      <div onclick = 'goBack();' id = 'previousbuttn'> < <div id = 'infobar'> </div> </div>
+       <script> infoBox(); </script>
+       <div id = 'introdisp'> Welcome to West side RPG </div>
+      <div id = 'infobox-cont'>
+        <span id = 'pointer'> </span>
+        <div id = 'serverinfobox' onclick = 'serverinfopage();' class = 'infobox'> <img src = 'res/img/infoicon.png'/> <span> Server Info </span> </div>
+        <div id = 'rulesbox' onclick = 'rulespage();' class = 'infobox'> <img src = "res/img/rulesicon.png"/> <span> Rules </span> </div>
+        <div id = 'donatebox' onclick = 'donatorpage();' class = 'infobox'> <img src = "res/img/donateicon.png"/> <span> Donate </span> </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

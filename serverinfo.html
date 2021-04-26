@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+
+<html lang = 'en'>
+
+<head>
+  <meta charset='utf-8'/>
+  <meta name= 'viewport' content='width=device-width, initial-scale=1, maximum-scale = 1.0'>
+  <meta >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire">
+  <script src = 'plugins\jquery-3.4.1.js'> </script>
+  <script src = 'serverinfo.js'> </script>
+  <script src = 'base.js'> </script>
+  <link rel = 'stylesheet' href = 'index.css'/>
+  <link rel = 'stylesheet' href = 'serverinfo.css'/>
+
+  <title>West-Side RPG v4</title>
+</head>
+
+<body>
+    <div id = 'box' >
+      <div class = 'ribbon'>
+        <!-- <button onclick = 'goBack();' id = 'previousbuttn'> < </button> -->
+        <img src = 'res/img/WSLogo.png' id = 'wslogo' />
+        <span> SERVER ADDRESS: <a style = "color: green" href= > 127.0.0.1 </a> </span>
+      </div>
+       <div onclick = 'goBack();' id = 'previousbuttn'> < <div id = 'infobar'> </div> </div>
+       <script> infoBox(); </script>
+       <div id = 'introdisp'> Welcome to West side RPG </div>
+       <div id = 'infobox-cont'>
+        <span id = 'pointer'> </span>
+        <div id = "itempop" class = "popup" style = "visibility: hidden"> <button id = "itempopclose" onclick = "itempopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "rankpop" class = "popup" style = "visibility: hidden"> <button id = "rankpopclose" onclick = "rankpopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "licencepop" class = "popup" style = "visibility: hidden"> <button id = "licencepopclose" onclick = "licencepopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "storagepop" class = "popup" style = "visibility: hidden"> <button id = "storagepopclose" onclick = "storagepopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+
+        <div id = 'jobbox' onclick = 'jobpage();' class = 'infobox'> <img src = 'res/img/jobicon.png'/> <span> Jobs </span> </div>
+        <div id = 'itemsbox' onclick = 'itempop();' class = 'infobox'> <img src = "res/img/itemsicon.png"/> <span> Items </span> </div>
+        <div id = 'ranks' onclick = 'rankpop();' class = 'infobox'> <img src = "res/img/rankicon.png"/> <span> Ranks </span> </div>
+        <div id = 'locations' onclick = 'locationpage();' class = 'infobox'> <img src = "res/img/locationicon.png"/> <span> Locations </span> </div>
+        <div id = 'licences' onclick = 'licencepop();' class = 'infobox'> <img src = "res/img/passporticon.png"/> <span> Licenses </span> </div>
+        <div id = 'storage' onclick = 'storagepop();' class = 'infobox'> <img src = "res/img/storageicon.png"/> <span> Storage </span> </div>
+        <div id = 'dealership' onclick = 'dealership();' class = 'infobox'> <img src = "res/img/dealershipicon.png"/> <span> Dealerships </span> </div>
+
+      </div>
+    </div>
+  </body>
+
+</html>

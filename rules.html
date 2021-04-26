@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html lang = 'en'>
+
+<head>
+  <meta charset='utf-8'/>
+  <meta name= 'viewport' content='width=device-width, initial-scale=1, maximum-scale = 1.0'>
+  <meta >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire">
+  <script src = 'plugins\jquery-3.4.1.js'> </script>
+  <script src = 'rules.js'> </script>
+  <script src = 'base.js'> </script>
+
+ <link rel = 'stylesheet' href = 'index.css'/>
+  <link rel = 'stylesheet' href = 'rules.css'/>
+
+  <title>West-Side RPG v4</title>
+</head>
+
+<body>
+    <div id = 'box' >
+      <div class = 'ribbon'>
+        <img src = 'res/img/WSLogo.png' id = 'wslogo' />
+        <span> SERVER ADDRESS: <a style = "color: green" href= > 127.0.0.1 </a> </span>
+      </div>
+      <div onclick = 'goBack();' id = 'previousbuttn'> < <div id = 'infobar'> </div> </div>
+      <script> infoBox(); </script>
+      <div id = 'introdisp'> Welcome to West side RPG </div>
+       <div id = "svpop" class = "popup" style = "visibility: hidden"> <button id = "svpopclose" onclick = "serverrulesx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+       <div id = "discpop" class = "popupComp" style = "visibility: hidden"> <button id = "discclose" onclick = "discordrulesx();" > x </button> <p>
+        <h1 style = "color : blue; text-align: center"> West-Side RPG Discord Rules </h1>
+        <div class = 'spacer'> </div>
+
+<h3> Every situation will be taken isolated and the result will be affected regarding the attitude and player's record. </h3>
+<div class = 'spacer'> </div>
+<h2> 1.Malware/Advertisement/Spam </h2>
+Any sort of link or image that can cause hardware/software malfunction or any sensitive content. </br>
+Spam isn't allowed on the West-side discord's channels. This means you cannot use our text channels to repeatedly post the same thing, to have attention or annoy other players. Especially on the ticket channel you must wait your turn and time, while the support team studies the situation and brings the best decision possible.
+<h4 style = "color: red"> Punishement: Kick/Ban </h4>
+<div class = 'spacer'> </div>
+
+<h2> 2.Racism or Discrimination </h2>
+It is not allowed to insult people because of one's origin. No form of Racism or Discrimination is allowed! Everyone is equal and everyone deserves to have a good time.
+<h4 style = "color: red"> Punishment: Discord and server ban </h4>
+<div class = 'spacer'> </div>
+
+<h2> 3. Impersonating or creating fake accounts </h2>
+Do not impersonate, imitate or create accounts to pretend to be someone else to gain access to server or personal information which is not readily available to you.
+<h4 style = "color: red"> Punishment: Discord and server ban </h4>
+<div class = 'spacer'> </div>
+
+<h2> 4. Provocations/Insults </h2>
+To bring the best experience to all, insults won't be allowed inside the text/voice discord channels.
+Think before you speak. If you are you angry, then take a breath and come back calmer.
+<h4 style = "color: red"> Punishment:  Mute/Ban </h4>
+<div class = 'spacer'> </div>
+
+<h2> 5. Respect the support team </h2>
+The support team are humans, which eventually they will make mistakes.There is no need to insult or cause a riot, if you aren't happy with the final situation you can open a ticket #📧┋tickets and another admin will take care of it.
+<h4 style = "color: red"> Punishment:  Ban </h4>
+<div class = 'spacer'> </div>
+
+<h2> 6. Harassment </h2>
+Forcing someone to join a voice discord channel or send personal messages causing any discomfort.
+<h4 style = "color: red"> Punishment: Kick/Ban </h4>
+<div class = 'spacer'> </div>
+       </p> </div>
+
+      <div id = 'infobox-cont'>
+        <span id = 'pointer'> </span>
+        <div id = 'discord-rules' onclick = 'discordrules();' class = 'infobox'> <img src = 'res/img/discordblueicon.png'/> <span> Discord rules </span> </div>
+        <div id = 'server-rules' onclick = 'serverrules();' class = 'infobox'> <img src = "res/img/rulesicon.png"/> <span> Server rules </span> </div>
+        </div>
+      </div>
+</body>
+
+</html>

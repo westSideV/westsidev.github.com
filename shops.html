@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html lang = 'en'>
+
+<head>
+  <meta charset='utf-8'/>
+  <meta name= 'viewport' content='width=device-width, initial-scale=1, maximum-scale = 1.0'>
+  <meta >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire">
+  <script src = 'plugins\jquery-3.4.1.js'> </script>
+  <script src = 'website.js'> </script>
+  <script src = 'base.js'> </script>
+  <script src = 'shops.js'> </script>
+  <link rel = 'stylesheet' href = 'index.css'/>
+  <link rel = 'stylesheet' href = 'shops.css'/>
+
+
+  <title>West-Side RPG v4</title>
+</head>
+
+<body>
+    <div id = 'box' >
+      <div class = 'ribbon'>
+       <img src = 'res/img/WSLogo.png' id = 'wslogo' />
+        <span> SERVER ADDRESS: <a style = "color: green" href= > 127.0.0.1 </a> </span>
+      </div>
+      <div onclick = 'goBack();' id = 'previousbuttn'> < <div id = 'infobar'> </div> </div>
+      <script> infoBox(); </script>
+      <div id = 'introdisp'> Welcome to West side RPG </div>
+      <div id = "blackmarketpop" class = "popup" style = "visibility: hidden"> <button id = "blackmarketpopclose()" onclick = "blackmarketx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+      <div id = "247pop" class = "popup" style = "visibility: hidden"> <button id = "247popclose" onclick = "tfsshopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+      <div id = "hardwarestorepop" class = "popup" style = "visibility: hidden"> <button id = "hardwarestorepopclose" onclick = "hardwarestorex();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+      <div id = "ammunationpop" class = "popup" style = "visibility: hidden"> <button id = "ammunationpopclose" onclick = "ammunationx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+       <div id = 'infobox-cont'>
+         <span id = 'pointer'> </span>
+          <div id = '247shop' onclick = 'tfsshop();' class = 'infobox'> <img src = "res/img/.png"/> <span> 24/7 Shop </span> </div>
+         <div id = 'blackmarket' onclick = 'blackmarket();' class = 'infobox'> <img src = "res/img/.png"/> <span> Black Market </span> </div>
+         <div id = 'hardwarestore' onclick = 'hardwarestore();' class = 'infobox'> <img src = "res/img/.png"/> <span> Hardware Store </span> </div>
+         <div id = 'ammunation' onclick = 'ammunation();' class = 'infobox'> <img src = "res/img/.png"/> <span> Ammunation </span> </div>
+       </div>
+     </div>
+
+  </body>
+
+ </html>

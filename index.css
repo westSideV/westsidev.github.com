@@ -1,0 +1,303 @@
+body
+{
+  background-color: black;
+  overflow: hidden;
+}
+
+#introdisp
+{
+  color: green;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 1.85%;
+  font-family: "Audiowide", sans-serif;
+  color: green;
+  width: auto;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 34px;
+  text-align: center;
+  background-color: black;
+  padding-left:  9.85%;
+  width: calc(87.15% - 190px);
+}
+
+#wslogo
+{
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10%;
+  left: -14%;
+  height: 270px;
+
+}
+
+.ribbon{
+	width:200px;
+	height:550px;
+	background-color: green;
+  background-image: linear-gradient(white, #47761E);
+	position: relative;
+	top:0px;
+  left:   0px;
+	animation:drop forwards .8s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.ribbon::before{
+		content: '';
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		bottom: -50px;
+		border-left: 100px solid #47761E;
+		border-right: 100px solid #47761E;
+		border-bottom: 50px solid transparent;
+	}
+	.ribbon::after{
+		content:'';
+		width:1030px;
+		height:490px;
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		bottom:-120px;
+    transition: 4s;
+    background-image: linear-gradient(to bottom right, green, black);
+		transform:skewY(35deg) skewX(0);
+	}
+
+.ribbon > span
+{
+  color: black;
+  position: absolute;
+  top: 55%;
+  left: 0%;
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-image: linear-gradient(to right, white, gray);
+
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes drop
+{
+  0%		{ top:-350px;}
+  100%	{ top:0;}
+}
+
+
+#box
+{
+  width: 97%;
+  height: 95vh;
+  margin-top: 1vh;
+  margin-left: 1.5%;
+  background-color: black;
+  background-image: url('res/img/boxbg2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#launcht
+{
+  position:relative;
+  opacity: 0.8;
+  background-color: #589226;
+  background-image: linear-gradient(to right, black, black);
+  font-family: "Audiowide", sans-serif;
+  color: silver;
+  width: auto;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 24px;
+  text-align: center;
+  height: 4vh;
+}
+
+#launcht:hover
+{
+  opacity: 0.8;
+}
+
+#btn-container
+{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 100%;
+}
+#discordbtn > img
+{
+  background-position: left;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 74px;
+  float:left;
+}
+#mainwebbtn > img
+{
+  background-position: left;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 74px;
+  float:left;
+}
+
+#mainwebbtn > span
+{
+  float:left;
+  margin-left: 2%;
+  margin-top: 4%;
+}
+#mainwebbtn > span > span
+{
+  color: #589226;
+  font-size: 3.5vh;
+  position: absolute;
+  top: 3%;
+  left: 89%;
+
+}
+#discordbtn > span > span
+{
+  color: #738ADB;
+  font-size: 3.5vh;
+  position: absolute;
+  top: 3%;
+  left: 89%;
+
+}
+#discordbtn > span
+{
+  float:left;
+  margin-left: 2%;
+  margin-top: 4%;
+}
+
+#mainwebbtn
+{
+  background-color: #47761E;
+  font-size: 3vh;
+  text-align: inherit;
+  border: none;
+  position: relative;
+  top: 0%;
+  width: 15%;
+  transition: 1.2s;
+}
+
+#discordbtn
+{
+  background-color: #516dd2;
+  font-size: 3vh;
+  text-align: inherit;
+  border: none;
+  position: relative;
+  top: 0%;
+  width: 15%;
+  left: 10%;
+  transition: 1.2s;
+}
+
+#discordbtn:hover
+{
+  background-color: #2d49ae;
+}
+
+#mainwebbtn:hover
+{
+    background-color: #385d18;
+}
+
+#mainwebintro
+{
+  position: absolute;
+  background-color: #589226;
+  border-left-color: #47761E;
+  left: -1.8%;
+  transition: 1.2s;
+  height: auto;
+}
+
+#discordintro
+{
+  position: absolute;
+  background-color: #738ADB;
+  border-left-color: #516dd2;
+  left: 23.5%;
+  transition: 1.2s;
+  height: auto;
+}
+
+.introbox
+{
+    width: 15%;
+    color: brown;
+    opacity: 1.7;
+    padding: 1.5%;
+    height: 20vh;
+    border-radius: 16px;
+    color: white;
+    border-left: 6px;
+    border-left-style: inset;
+}
+
+.introbox:hover
+{
+  border-left-style: outset;
+}
+
+#infobar
+{
+  background-color: black;
+  opacity: 0.8;
+  color: gray;
+  height: 50px;
+  width: 150px;
+  position: fixed;
+  font-size: 24px;
+  top: 10px;
+  left: calc(98.1% - 150px);
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 20px;
+
+}
+
+#previousbuttn
+{
+  height: 50px;
+  width: 40px;
+    /* background-color: #589226; */
+  background-color: gray;
+  color: black;
+  border: none;
+  font-size: 24px;
+  color: white;
+  position: fixed;
+  top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 20px;
+  left: calc(97.85% - 195px);
+  z-index: 1000;
+  cursor: all-scroll;
+  padding-left: 10px;
+  /*! text-align: center; */
+}
+
+#previousbuttn:hover
+{
+  padding-left: 20px;
+  left: calc(98.1% - 210px);
+}
+
+#infobar:hover
+{
+  background-color: #47761E;
+  color:black;
+}

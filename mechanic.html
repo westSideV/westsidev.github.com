@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html lang = 'en'>
+
+<head>
+  <meta charset='utf-8'/>
+  <meta name= 'viewport' content='width=device-width, initial-scale=1, maximum-scale = 1.0'>
+  <meta >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire">
+  <script src = 'plugins\jquery-3.4.1.js'> </script>
+  <script src = 'mechanic.js'> </script>
+  <script src = 'base.js'> </script>
+  <link rel = 'stylesheet' href = 'index.css'/>
+  <link rel = 'stylesheet' href = 'mechanic.css'/>
+
+  <title>West-Side RPG v4</title>
+</head>
+
+
+<body>
+    <div id = 'box' >
+      <div class = 'ribbon'>
+        <img src = 'res/img/WSLogo.png' id = 'wslogo' />
+        <span> SERVER ADDRESS: <a style = "color: green" href= > 127.0.0.1 </a> </span>
+      </div>
+        <div onclick = 'goBack();' id = 'previousbuttn'> < <div id = 'infobar'> </div> </div>
+        <script> infoBox(); </script>
+        <div id = 'introdisp'> Welcome to West side RPG </div>
+        <div id = 'infobox-cont'>
+        <span id = 'pointer'> </span>
+        <div id = "mechpop" class = "popup" style = "visibility: hidden"> <button id = "mechpopclose" onclick = "mechpopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "electricianpop" class = "popup" style = "visibility: hidden"> <button id = "electricianpopclose" onclick = "electricianpopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "engineerpop" class = "popup" style = "visibility: hidden"> <button id = "engineerpopclose" onclick = "engineerpopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+
+        <div id = 'mechbox' onclick = 'mechpop();' class = 'infobox'> <img src = "res/img/mechanicicon.png"/> <span> Mechanic </span> </div>
+        <div id = 'electricianbox' onclick = 'electricianpop();' class = 'infobox'> <img src = 'res/img/electricianicon.png'/> <span> Electrician </span> </div>
+        <div id = 'engineerbox' onclick = 'engineerpop();' class = 'infobox'> <img src = "res/img/engineericon.png"/> <span> Engineer </span> </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

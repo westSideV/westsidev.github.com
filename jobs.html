@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+
+<html lang = 'en'>
+
+<head>
+  <meta charset='utf-8'/>
+  <meta name= 'viewport' content='width=device-width, initial-scale=1, maximum-scale = 1.0'>
+  <meta >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire">
+  <script src = 'plugins\jquery-3.4.1.js'> </script>
+  <script src = 'jobs.js'> </script>
+  <script src = 'base.js'> </script>
+  <link rel = 'stylesheet' href = 'index.css'/>
+  <link rel = 'stylesheet' href = 'jobs.css'/>
+
+  <title>West-Side RPG v4</title>
+</head>
+
+
+<body>
+    <div id = 'box' >
+      <div class = 'ribbon'>
+        <img src = 'res/img/WSLogo.png' id = 'wslogo' />
+        <span> SERVER ADDRESS: <a style = "color: green" href= > 127.0.0.1 </a> </span>
+      </div>
+        <div onclick = 'goBack();' id = 'previousbuttn'> < <div id = 'infobar'> </div> </div>
+        <script> infoBox(); </script>
+        <div id = 'introdisp'> Welcome to West side RPG </div>
+        <div id = 'infobox-cont'>
+        <span id = 'pointer'> </span>
+        <div id = "mwpop" class = "popup" style = "visibility: hidden"> <button id = "mwpopclose" onclick = "mwpopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "medicpop" class = "popup" style = "visibility: hidden"> <button id = "medicpopclose" onclick = "medicpopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "policepop" class = "popup" style = "visibility: hidden"> <button id = "policepopclose" onclick = "policepopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "cspop" class = "popup" style = "visibility: hidden"> <button id = "cspopclose" onclick = "cspopx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+        <div id = "pop" class = "popup" style = "visibility: hidden"> <button id = "popclose" onclick = "popx();" > x </button> <p> <h1> <div class = "spacer"> </div> Coming soon <div class = "spacer"> </div> </h1> </p></div>
+
+        <div id = 'mwbox' onclick = 'mwpop();' class = 'infobox'> <img src = 'res/img/mwicon.png'/> <span> Mineworker </span> </div>
+        <div id = 'mechbox' onclick = 'mechanicpage();' class = 'infobox'> <img src = "res/img/mechanicicon.png"/> <span> Mechanic </span> </div>
+        <div id = 'criminalbox' onclick = 'criminalpage();' class = 'infobox'> <img src = "res/img/criminalicon.png"/> <span> Criminal </span> </div>
+        <div id = 'medicbox' onclick = 'medicpop();' class = 'infobox'> <img src = "res/img/medicicon.png"/> <span> Medic </span> </div>
+        <div id = 'policebox' onclick = 'policepop();' class = 'infobox'> <img src = "res/img/policeicon.png"/> <span> Police </span> </div>
+        <div id = 'csbox' onclick = 'cspage();' class = 'infobox'> <img src = "res/img/csicon.png"/> <span> Community Service </span> </div>
+        <div id = 'comingsoonbox' onclick = 'pop();' class = 'infobox'> <img src = "res/img/comingsoon.png"/> <span> Coming soon </span> </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
